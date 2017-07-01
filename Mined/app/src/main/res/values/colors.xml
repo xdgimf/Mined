@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!-- text color background milestone-->
+    <color name="milestone_background">#f8f8f8</color>
+
+    <!-- floating action button -->
+    <color name="button_blue">#3C82EB</color>
+
+    <!-- navigation bar -->
+    <color name="btn_context_menu_normal">#ffffff</color>
+    <color name="btn_context_menu_pressed">#40000000</color>
+
+    <!-- default white color -->
+    <color name="default_text_color">#FFFFFF</color>
+
+    <!-- milestone color -->
+    <color name="milestone_title_color">#404040</color>
+
+    <!-- card layout -->
+    <color name="text_like_counter">#2b5a83</color>
+
+
+    <!-- Chat Layout -->
+    <!-- text color gray-->
+    <color name="gray_sub_title">#c4c7c9</color>
+    <!-- edit text hint text color -->
+    <color name="hint_text_color">#b2b2b2</color>
+
+    <!-- create channels -->
+    <color name="place_holder">#595C63</color>
+
+    <color name="text_join">#009e55</color>
+
+    <!-- colors for fab behavior -->
+    <color name="btn_default_light_normal">#00000000</color>
+    <color name="btn_default_light_pressed">#40ffffff</color>
+</resources>

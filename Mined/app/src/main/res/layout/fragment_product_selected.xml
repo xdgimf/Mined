@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+>
+    <ScrollView
+        android:id="@+id/selected_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+    >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+        >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:background="@android:color/white"
+            >
+                <com.pocketmarket.mined.RoundedImageView
+                    android:id="@+id/image_round"
+                    android:contentDescription=""
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="7dp"
+                    android:src="@mipmap/blank"
+                    android:layout_gravity="center"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="center_vertical"
+                    android:layout_centerHorizontal="true"
+                />
+
+                <com.pocketmarket.mined.widget.CustomFontTextView
+                    android:id="@+id/product_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginRight="16dp"
+                    android:textColor="@color/milestone_title_color"
+                    custom:customFont="fonts/Montserrat-Regular.ttf"
+                    android:textSize="14sp"
+                />
+
+                <com.pocketmarket.mined.widget.CustomFontTextView
+                    android:id="@+id/product_sub_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="80dp"
+                    android:paddingRight="16dp"
+                    android:textColor="@color/milestone_title_color"
+                    custom:customFont="fonts/SourceSansPro-Regular.ttf"
+                    android:layout_marginBottom="10dp"
+                    android:layout_below="@+id/product_title"
+                    android:textSize="14sp"
+                />
+
+            </RelativeLayout>
+
+            <include layout="@layout/fragment_product_selected_inquiries" />
+
+        </LinearLayout>
+    </ScrollView>
+    <include layout="@layout/progressbar" />
+</LinearLayout>

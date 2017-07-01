@@ -1,0 +1,100 @@
+<resources>
+    <string name="app_name">Mined</string>
+    <string name="signin">SignIn</string>
+
+    <!-- signin strings-->
+    <string name="facebook_conflict_key">Conflict of facebook key. Remove Mined on your facebook app under app settings.</string>
+    <string name="signup_facebook">SIGN UP WITH FACEBOOK</string>
+    <string name="logout">Logout</string>
+
+    <string name="app_id">facebook app id</string>
+
+    <!-- facebook sdk button -->
+    <string name="title_facebook_login">Login Facebook</string>
+
+    <!-- mined fragment-->
+    <string name="products">Products</string>
+    <string name="products_empty">Creating new products brings you closer to your customers on your favorite social site.</string>
+    <string name="total_number_of_items">10</string>
+
+    <!-- navigation drawer -->
+    <string name="user">Mark</string>
+
+    <!-- title for the products -->
+    <string name="title">Title</string>
+
+    <!-- popup menu -->
+    <string name="edit_menu">Edit</string>
+    <string name="delete_menu">Delete</string>
+    <string name="cancel">Cancel</string>
+    <string name="delete">Delete</string>
+
+    <string name="delete_product_alert">Would you like to delete this product?</string>
+    <string name="delete_product_title">Delete Product</string>
+
+    <!-- inquiries fragment-->
+    <string name="inquiries_blank">There seems to be no inquiry for this product.</string>
+
+    <!-- card view layout-->
+    <string name="unionbank">UnionBank</string>
+    <string name="error_no_internet">Cannot connect, please try again later.</string>
+
+    <!-- animation likes -->
+    <plurals name="likes_count">
+        <item quantity="one">%d recommend</item>
+        <item quantity="other">%d recommends</item>
+    </plurals>
+
+    <!-- menu more -->
+    <string name="buy_now">BUY NOW</string>
+    <string name="view_location">VIEW LOCATION</string>
+    <string name="cancel_more">CANCEL</string>
+    <string name="schedule_now">SCHEDULE NOW</string>
+
+
+    <!-- chat mode -->
+    <string name="enter_message_here">Enter your message here</string>
+    <string name="please_wait">Please wait</string>
+    <string name="waiting_for_order"><b>Waiting for Order</b></string>
+    <string name="assistant">Assistant</string>
+
+
+    <!-- bottom sheet chat -->
+    <string name="item">Product / Service</string>
+    <string name="balance_analytics">Balance Analytics</string>
+    <string name="delivery_fee">Delivery Fee</string>
+    <string name="other_fees">Miscellaneous Fee</string>
+    <string name="tax">Tax (12% VAT)</string>
+    <string name="trucks">Truck Loan</string>
+    <string name="stocks">Stocks</string>
+    <string name="settings">Settings</string>
+
+    <!-- analytics -->
+    <string name="analytics">Analytics</string>
+
+    <!-- feeds -->
+    <string name="feeds">Feeds</string>
+
+    <!-- buy -->
+    <string name="buy_small_now">Buy Now</string>
+    <string name="amount_due">Amount Due</string>
+    <string name="pay_small_now">Pay Now</string>
+    <string name="save">Save</string>
+
+    <!-- upload photo content description -->
+    <string name="upload_photo_content_description">Upload Photo</string>
+
+    <!-- rooms content description -->
+    <string name="rooms_content_description">Rooms Content Description</string>
+
+    <!-- camera content description -->
+    <string name="camera_content_description">Camera Content Description</string>
+    <string name="title_activity_channels">ChannelsActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+    <!-- upload validation form -->
+    <string name="application">Application</string>
+    <string name="pay_now">PAY NOW</string>
+
+</resources>

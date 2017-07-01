@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.pocketmarket.mined">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <!-- browse image -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <!-- GCM Google Cloud Messaging -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <!-- camera permission -->
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <!-- no longer required on higher version because it is not accessable anymore -->
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="18" />
+
+    <permission
+        android:name="com.pocketmarket.mined.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.pocketmarket.mined.permission.C2D_MESSAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:name=".MainApplication"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activity.SigninActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.AssistantActivity"
+            android:label="@string/assistant"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".activity.MinedActivity"
+            android:label="@string/products"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".activity.ExpenseAnalyticsActivity"
+            android:label="@string/analytics"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".activity.FeedsActivity"
+            android:label="@string/feeds"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".activity.BuyActivity"
+            android:label="@string/buy_small_now"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".activity.PayActivity"
+            android:label="@string/pay_small_now"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name=".activity.ApplicationActivity"
+            android:label="@string/application"
+            android:screenOrientation="portrait"></activity>
+
+        <!-- Facebook sdk -->
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/title_facebook_login"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"></activity>
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/app_id" />
+
+        <!-- fcm notification using broadcast receiver for more security -->
+        <receiver
+            android:name=".receiver.FcmBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+
+                <category android:name="com.pocketmarket.mined" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".service.FcmNotificationService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".service.FcmInstanceIdService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <!-- used for camera storage -->
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.example.android.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+    </application>
+
+</manifest>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="customer_application">
+        <item>Name</item>
+        <item>Bundled Plans</item>
+        <item>Home Ownership</item>
+        <item>Telephone Wiring</item>
+        <item>Employment Status</item>
+        <item>Employment Address</item>
+        <item>Employment Poisition</item>
+        <item>Employment Salary</item>
+        <item>Birth Date</item>
+        <item>Sex</item>
+        <item>Civil Status</item>
+        <item>Citizenship</item>
+        <item>Email</item>
+        <item>Cell No.</item>
+        <item>Address</item>
+    </string-array>
+</resources>

@@ -384,8 +384,7 @@ public class ChatListViewAdapter extends ArrayAdapter<MessageDTO> {
         viewHolder.mRoundedImage.setVisibility(View.GONE);
 
         viewHolder.mImageGallery.setVisibility(View.VISIBLE);
-        //viewHolder.mImageGallery.setBackgroundResource(R.drawable.btn_white);
-
+        
         createUploadImage(viewHolder, id, imageLink, 0);
 
     }

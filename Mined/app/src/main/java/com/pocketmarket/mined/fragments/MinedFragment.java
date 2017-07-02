@@ -40,8 +40,6 @@ public class MinedFragment extends Fragment implements FeedProductsAdapter.OnFee
     private SwipeRefreshLayout mSwipeRefreshLayout;
     private ProgressBar mProgressBar;
 
-
-    //    private String mAccessToken;
     private ArrayList<ProductsDTO> mProductItemList;
 
     private boolean mManualSyncRequest;
@@ -59,52 +57,12 @@ public class MinedFragment extends Fragment implements FeedProductsAdapter.OnFee
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-//        // get the shared preferences user value
-//        mAccessToken = Utils.getAccessToken(getActivity());
-//
-//        Log.d(TAG, "accessToken: " + mAccessToken);
-//
-//        mManualSyncRequest = false;
-//
-//        initProducts();
-
     }
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_mined, container, false);
-
-//        mRvFeed = (RecyclerView) view.findViewById(R.id.rvFeed);
-//
-//        mProductLayout = (LinearLayout) view.findViewById(R.id.product_layout);
-//
-//        mProgressBar = (ProgressBar) view.findViewById(R.id.progress_bar);
-//
-//        mSwipeRefreshLayout = (SwipeRefreshLayout) view.findViewById(R.id.swipe_refresh_layout);
-//        mSwipeRefreshLayout.setColorSchemeResources(android.R.color.holo_blue_bright,
-//                android.R.color.holo_green_light,
-//                android.R.color.holo_orange_light,
-//                android.R.color.holo_red_light);
-//
-//        mSwipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
-//            @Override
-//            public void onRefresh() {
-//                mManualSyncRequest = true;
-//
-//                // disable the progressbar
-//                showProgressBar(false);
-//
-//                // disable the blank statements
-//                setProductVisible(false);
-//
-//                //Trigger content provider refresh
-//                refreshProduct();
-//
-//            }
-//        });
-//
-//        refreshProduct();
 
         return view;
     }
@@ -269,13 +227,6 @@ public class MinedFragment extends Fragment implements FeedProductsAdapter.OnFee
         FeedContextMenuManager.getInstance().hideContextMenu();
 
     }
-
-//    /**
-//     * The method to refresh the list of items shown
-//     */
-//    private void refreshProduct() {
-//        mProductsThread.queuePost(PRODUCTS, getProducts(mAccessToken));
-//    }
 
     /**
      * @param message The method to display an error message

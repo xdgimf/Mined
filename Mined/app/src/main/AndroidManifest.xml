@@ -56,10 +56,6 @@
             android:label="@string/analytics"
             android:screenOrientation="portrait"></activity>
         <activity
-            android:name=".activity.FeedsActivity"
-            android:label="@string/feeds"
-            android:screenOrientation="portrait"></activity>
-        <activity
             android:name=".activity.BuyActivity"
             android:label="@string/buy_small_now"
             android:screenOrientation="portrait"></activity>

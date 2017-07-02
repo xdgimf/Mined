@@ -78,7 +78,6 @@ public class BuyFragment extends Fragment {
         mBuyNow.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-//                payNow();
             }
         });
 
@@ -96,59 +95,6 @@ public class BuyFragment extends Fragment {
     private String getItems(){
         return AppApi.URL_NAME + AppApi.ITEMS;
     }
-
-
-//    private void payNow(){
-//
-//        mBuyNow.setEnabled(false);
-//        if (mType == 1){
-//            paynowPaypal();
-//        }else{
-//            notification();
-//        }
-//
-//    }
-
-//    private void paynowPaypal(){
-//        new PaypalPaymentFetchr().execute(getPaypalPayment());
-//    }
-
-//    /**
-//     * Url for the smart assistant
-//     * @return
-//     */
-//    private String getPaypalPayment(){
-//        return AppApi.URL_NAME + AppApi.PAYPAL_PAYMENT ;
-//    }
-//
-//    /**
-//     *  Asynccall for the assistant
-//     */
-//    private class PaypalPaymentFetchr extends AsyncTask<String, Void, String> {
-//
-//        @Override
-//        protected String doInBackground(String... url) {
-//            Log.i(TAG, "SmartReplyTask URL: " + url[0]);
-//            return new PayPalPostFetchr().fetchItems(url[0], mAccessToken, mId, mAmount);
-//        }
-//
-//        @Override
-//        protected void onPostExecute(String result) {
-//            Log.i(TAG, "onPostExecute PaypalPaymentFetchr: " + result);
-//
-//            mBuyNow.setEnabled(true);
-//
-//            if (result == null)
-//                return;
-//
-//            Intent i = new Intent(Intent.ACTION_VIEW);
-//            i.setData(Uri.parse(result));
-//            startActivity(i);
-//
-//
-//        }
-//
-//    }
 
     private void initItemsInfo(){
         mItemsThread = new ItemsThread<String>(new Handler());

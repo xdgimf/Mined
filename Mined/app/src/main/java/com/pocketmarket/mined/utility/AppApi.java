@@ -16,7 +16,7 @@ import com.facebook.login.LoginManager;
 public class AppApi {
     public static final String TAG = "AppApi";
 
-    public static final String URL_NAME = "http://54f15015.ngrok.io/MinedRest";
+    public static final String URL_NAME = "http://192.168.130.28:8080/MinedRest";
 
     // URL for the photos
     public final static String URL_PHOTOS_URL = "http://kinvo-staging.s3.amazonaws.com/uploads/photo/image/";

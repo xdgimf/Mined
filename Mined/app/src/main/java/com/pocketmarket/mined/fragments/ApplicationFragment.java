@@ -227,27 +227,20 @@ public class ApplicationFragment extends Fragment {
         mProfileSelection.setAdapter(adapterProfileSelection);
         mProfileSelection.setSelection(0);
 
-        //ArrayAdapter<String> adapterBundledPlansSelection = new ArrayAdapter<String>(getActivity(), android.R.layout.simple_spinner_dropdown_item, getResources().getStringArray(R.array.customer_application));
         mBundledPlansSelection.setAdapter(adapterProfileSelection);
         mBundledPlansSelection.setSelection(1);
 
-
-        //ArrayAdapter<String> adapterHomeOwnershipSelection = new ArrayAdapter<String>(getActivity(), android.R.layout.simple_spinner_dropdown_item, getResources().getStringArray(R.array.customer_application));
         mHomeOwnershipSelection.setAdapter(adapterProfileSelection);
         mHomeOwnershipSelection.setSelection(2);
 
-        //ArrayAdapter<String> adapterTelephoneWiringSelection = new ArrayAdapter<String>(getActivity(), android.R.layout.simple_spinner_dropdown_item, getResources().getStringArray(R.array.customer_application));
         mTelephoneWiringSelection.setAdapter(adapterProfileSelection);
         mTelephoneWiringSelection.setSelection(3);
-
 
         mEmploymentStatusSelection.setAdapter(adapterProfileSelection);
         mEmploymentStatusSelection.setSelection(4);
 
-
         mEmploymentAddressSelection.setAdapter(adapterProfileSelection);
         mEmploymentAddressSelection.setSelection(5);
-
 
         mEmploymentPositionSelection.setAdapter(adapterProfileSelection);
         mEmploymentPositionSelection.setSelection(6);
